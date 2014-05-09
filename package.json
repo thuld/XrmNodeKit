@@ -1,0 +1,29 @@
+{
+  "name": "XrmNodeKit",
+  "version": "0.0.1",
+  "description": "node.js client for the SOAP web service of Dynamics CRM 2011/2013",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thuld/XrmNodeKit.git"
+  },
+  "keywords": [
+    "Dynamics",
+    "CRM",
+    "Xrm",
+    "SOAP"
+  ],
+  "author": "Daniel Thul <thuld@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thuld/XrmNodeKit/issues"
+  },
+  "homepage": "https://github.com/thuld/XrmNodeKit",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-jshint": "^1.5.5"
+  }
+}
