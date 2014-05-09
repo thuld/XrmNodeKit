@@ -24,6 +24,11 @@
   "homepage": "https://github.com/thuld/XrmNodeKit",
   "devDependencies": {
     "gulp": "^3.6.2",
-    "gulp-jshint": "^1.5.5"
+    "gulp-jshint": "^1.5.5",
+    "jshint-stylish": "^0.2.0",
+    "gulp-notify": "^1.2.5"
+  },
+  "dependencies": {
+    "bluebird": "^1.2.4"
   }
 }
