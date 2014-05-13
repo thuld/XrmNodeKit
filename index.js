@@ -1,24 +1,31 @@
 'use strict';
 
-var Promise = require('bluebird');
+// var XrmAuth = require('./lib/XrmAuth');
+var XrmRequest = require('./lib/XrmRequest');
 
-function getById(entity, id, columns) {
+function XrmNodeKit( serviceurl, authheader ){
+
+    this.authenticationHeader = authheader;
+    this.serviceurl = serviceurl;
     
 }
-
-function getByAttribute(entity, attribute, value, columns){
-
+/*
+XrmNodeKit.prototype.getById = function(entity, id, columns) {
 }
 
-function fetch(fetchxml){
-
+XrmNodeKit.prototype.getByAttribute = function(entity, attribute, value, columns){
 }
 
-function fetchAll(fetchxml){
-
+XrmNodeKit.prototype.fetch = function(fetchxml){
 }
 
-export.getById = getById;
-export.getByAttribute = getByAttribute;
-export.fetch = fetch;
-export.fetchAll = fetchAll;
+XrmNodeKit.prototype.fetchAll = function(fetchxml){
+}
+*/
+
+XrmNodeKit.prototype.whoAmI = function(){
+
+    return XrmRequest.whoAmI(this.serviceurl, this.authenticationHeader);
+};
+
+module.exports = XrmNodeKit;
