@@ -9,9 +9,13 @@ var request = require('request');
 var fs = require('fs');
 
 // global test values /parameter
-var url = "https://alfapeopleag.crm4.dynamics.com/";
-var username = "thul@AlfaPeopleAG.onmicrosoft.com";
-var password = "foobar0815%";
+var config  = JSON.parse( fs.readFileSync('./config.thuld', 'utf8') );
+
+console.log(config.password);
+
+var url = config.url;
+var username = config.username;
+var password = config.password;
 
 function fakePostAuthRequest( options, callback ){
 
